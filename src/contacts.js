@@ -19,6 +19,7 @@ export async function createContact() {
   let contacts = await getContacts();
   contacts.unshift(contact);
   await set(contacts);
+  console.log(contact);
   return contact;
 }
 
